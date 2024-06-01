@@ -1,0 +1,115 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+  
+.emoji{
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+  
+.emoji h2{
+    
+    border-bottom:  2px solid #ccc;
+    font-size: 1.2em;
+    text-align:left;
+     padding: 10px 0px;/* Add padding to top and bottom for visual spacing */
+   display: flex;
+}
+  
+.emoji a{
+    
+    text-decoration: none;
+    background-color: #781BAA;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    
+    
+    
+}
+.emoji h2, .emoji p, .emoji a {
+    width: calc(100% - 4px); /* Subtracting 4px overall (2px on each side) */
+    margin: 2px;
+}
+  
+.icon{
+    font-size: 4rem;
+    padding: 20px 0;
+    order: -1;
+}
+  
+.emojis{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.emoji {
+    display: flex;
+    flex-direction: column; /* This orders the children vertically */
+    align-items:center; /* Aligns items centrally within the container */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.icon {
+    font-size: 4rem; /* Ensuring large, readable emoji */
+    padding: 20px 0; /* Top and bottom padding for visual spacing */
+    order: -1; /* This places the icon at the very top */
+}
+
+.emoji p {
+    text-align: justify;
+    padding: 10px;
+    flex-grow: 1; /* Ensures that the paragraph expands to fill available space */
+    
+}
+.emoji h2{
+    font-size: 1.2em;
+    margin: 10px 0; /* Adds space around the heading */
+    text-align: center; /* Centers the heading */
+
+}
+
+.emoji a {
+    text-decoration: none;
+    color: white;
+    background-color: #781BAA;
+    padding: 10px;
+    border-radius: 8px;
+    display: block;/* Makes the link fill the container width */
+    text-align: center; /* Centers the link text */
+    margin-top: auto; /* Pushes the link to the bottom */
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.a href{
+    width: 90%;
+    padding: 10px;
+    background: #6200ee;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.a button:hover {
+    background: #0056b3;
+}
